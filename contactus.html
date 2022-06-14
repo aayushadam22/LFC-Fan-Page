@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LFC - Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="myscripts.js"></script> 
+</head>
+<body>
+    <article>
+        <header>
+            <div id="navbar-container">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Our People</a></li>
+                    <li><a href="#">Media</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div id="logo-name">
+                <img id="logo" src="images/lfclogo.png" alt="LFC">
+                <h1>Liverpool Football Club</h1>
+            </div>
+        </header>
+    </article>
+    <section>
+        <div class="contact-container">
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <form name="contactus" method="post" onsubmit="displayForm()">
+                    <div class="text-fields">
+                        <input type="text" name="fname" placeholder="First Name" required>
+                        <input type="text" name="lname" placeholder="Last Name" required><br>
+                        <input type="text" name="email" placeholder="Primary Email"required >
+                        <input type="text" placeholder="Secondary Email"><br>
+                    </div>
+                    <h3>Subject:</h3>
+                    <div class="checkbox-fields">
+                        <div>
+                            <input type="checkbox" name="tickets" id="cbxtickets">Match Tickets
+                        </div>
+                        <div>
+                            <input type="checkbox" name="seasontickets" id="seasontickets">Season Tickets
+                        </div>
+                        <div>
+                            <input type="checkbox" name="events" id="events">Events
+                        </div>
+                        <div>
+                            <input type="checkbox" name="careers" id="careers">Careers
+                        </div>
+                        <div>
+                            <input type="checkbox" name="trials" id="trials">Trials
+                        </div>
+                        <div>
+                            <input type="checkbox" name="others" id="others">Others
+                        </div>
+                    </div>
+                    <h3>Address</h3>
+                    <div class="address">
+                        <input type="text" name="address" placeholder="Address" id="add">
+                        <div>
+                        <label for="state">Zone</label>
+                        <select name="zone" id="zone">
+                            <option value="north">North</option>
+                            <option value="south">South</option>
+                            <option value="east">East</option>
+                            <option value="west">West</option>
+                        </select>
+                        </div>
+                        <div>
+                        <label for="city">City</label>
+                        <select name="city" id="city">
+                            <option value="liverpool">Liverpool</option>
+                            <option value="manchester">Manchester</option>
+                            <option value="londing">London</option>
+                            <option value="newcastle">New Castle</option>
+                        </select>
+                        </div>
+                        <input type="number" name="phone" id="phone" name="phone" placeholder="Phone">
+                    </div>
+                    <hr>
+                    <div class="buttons">
+                        <input type="reset" name="reset" value="Reset" class="reset">
+                        <input type="submit" name="submit" value="Submit" class="submit">
+                    </div>
+                </form>
+            </div>
+            <div class="contact-info">
+                <div class="numbers">
+                    <h3>Call Us</h3>
+                    <p>0151 264 2222</p>
+                    <p>0151 264 2244</p>
+                </div>
+                <div class="hq">
+                    <h3>Location</h3>
+                    <p>Anfield Rd, Anfield,<br>Liverpool L4 0TH, United Kingdom</p>
+                </div>
+                <div class="hours">
+                    <h3>Business Hours</h3>
+                    <p>
+                    Mon-Fri ... 10am-5pm<br>
+                    Sat-Sun ... 10am-12pm
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="legalities">
+            <a href="#">Legal</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <div class="copyrights">
+            <p>
+                Copyright &#169; 1892-2022 - All Rights Reserved - Liverpool Football Club
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
